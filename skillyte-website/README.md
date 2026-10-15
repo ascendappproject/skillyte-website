@@ -21,7 +21,7 @@ The home page has an Android download section (`#android-apk`). The APK itself i
 
 ## Brand
 
-- Purple `#481172`, gold `#DFB73F`, cream `#FBF7EE`
+- Navy `#2B3F7E`, gold `#E2A72A`, cream `#F8F2E6`
 - Typeface: Figtree (Noto Sans for Indian scripts)
 - Logo files: `assets/brand/` (SVG recreations; swap in the official vector files when available)
 - Favicon: `assets/favicon.svg`
