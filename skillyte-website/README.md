@@ -15,6 +15,10 @@ Plain static HTML and CSS. There is no build step and no dependencies. Fonts loa
 
 Internal links use `.html` file names so the site works on any static host. Most hosts (GitHub Pages, Netlify, Vercel, Cloudflare Pages) also serve `/support` for `support.html`.
 
+## Android APK download
+
+The home page has an Android download section (`#android-apk`). The APK itself is hosted outside the repo (it is over GitHub's 100 MB file limit) and lives in Amazon S3. See `docs/apk-hosting.md` for how to publish a new version and keep the page details in sync.
+
 ## Brand
 
 - Purple `#481172`, gold `#DFB73F`, cream `#FBF7EE`
@@ -26,13 +30,11 @@ Internal links use `.html` file names so the site works on any static host. Most
 
 All unfinished content is in `[square brackets]`. Search the HTML files for `[` to find it. Main items:
 
-- Legal entity name and registered address
-- Support, privacy and grievance emails, support phone number and hours
-- Grievance Officer name
 - Privacy Policy dates, retention periods and the final service-provider list
 - In-app menu names in the delete-account steps and the support FAQ
 - Final list of languages (home page)
-- Real Google Play and App Store links (the download buttons on the home page currently point back to the page)
+- Real Google Play and App Store links (those two buttons on the home page currently point back to the page)
+- Check the Download APK link works for signed-out visitors, and that only the APK (not the whole production bucket) is public; see `docs/apk-hosting.md`
 
 The privacy policy is a draft and needs legal review before it is published.
 
